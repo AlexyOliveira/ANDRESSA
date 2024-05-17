@@ -8,6 +8,12 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
         }
         header {
             background-color: #ff69b4; /* Cor rosa */
@@ -16,28 +22,28 @@
             padding: 20px 0;
             font-size: 2.5em;
             font-weight: bold;
+            width: 100%;
             position: fixed;
             top: 0;
-            width: 100%;
             z-index: 1000;
         }
         main {
-            padding-top: 100px; /* Espaço para o header fixo */
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            flex-wrap: wrap;
+            text-align: center;
+            flex-grow: 1;
+            width: 100%;
+            padding-top: 100px; /* Espaço para o header fixo */
         }
         .content p {
             font-weight: 900;
             font-size: 20px;
-            text-align: center;
+            margin: 20px 0;
         }
-        .content img {
-            margin: 20px;
-        }
-        .content iframe {
-            margin: 20px;
+        .content img, .content iframe {
+            margin: 20px 0;
         }
     </style>
 </head>
