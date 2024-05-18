@@ -9,7 +9,7 @@
         margin: 0;
         font-family: Arial, sans-serif;
         display: flex;
-        flex-direction: column;
+        
         justify-content: center;
         align-items: center;
         height: 100vh;
@@ -31,42 +31,52 @@
         width: 100%;
         z-index: 1000;
       }
-      main {
-        padding-top: 100px; /* Espaço para o header fixo */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-      }
-      .content p {
+      
+      .contentp {
         font-weight: 900;
         font-size: 20px;
         text-align: center;
-       
       }
       .content img {
         margin: 20px;
-         
       }
       .content iframe {
         margin: 20px;
         width: 500px;
+      }
+      .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      main {
+        padding-top: 100px;
       }
     </style>
   </head>
   <body>
     <header>Site da Andressa</header>
     <main>
-      <div class="content">
-        <p>
+      <p class="contentp">
           ME DA 1 REAL ANDRESSA! <br />
           E VAI VENDER EXTINTOR🧯
         </p>
+      <div class="content">
+        
         <img src="./la.png" alt="Imagem de Andressa" />
         <div>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/PdHO4MTn4Jg?si=MWq7pws90q3yOXA2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/PdHO4MTn4Jg?si=MWq7pws90q3yOXA2"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
         </div>
-       
       </div>
     </main>
   </body>
