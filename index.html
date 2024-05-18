@@ -38,11 +38,12 @@
         text-align: center;
       }
       .content img {
-        margin: 20px;
-        width: 400px;
+        margin: 10px;
+        width: 450px;
       }
       .content iframe {
         margin: 50px;
+        box-shadow: 0 4px 8px rgba(0, 0, 9, 9.9);
       }
       .content {
         display: flex;
@@ -56,13 +57,14 @@
 
       @media (max-width: 776px) { 
         .content img {
-        margin: 20px;
-        width: 250px;
+        margin: 10px;
+        width: 290px;
       }
       .content iframe {
-        margin: 20px;
-        width: 300px;
+        margin: 10px;
+        width: 310px;
         height: 200px;
+       
       }
       .contentp {
         font-weight: 900;
@@ -81,7 +83,7 @@
         </p>
       <div class="content">
         
-        <img src="./la.png" alt="Imagem de Andressa" />
+        <img id="esse" src="./03.webp" alt="Imagem de Andressa" />
         <div>
           <iframe
             width="560"
@@ -96,5 +98,14 @@
         </div>
       </div>
     </main>
+    <script>
+      const imagem = document.getElementById("esse");
+      let numero = 3;
+      setInterval(() => {
+        numero = numero < 5 ? numero + 1 : 3;
+        imagem.src = `0${numero}.webp`;
+      }, 5000);
+    </script>
+    </script>
   </body>
 </html>
